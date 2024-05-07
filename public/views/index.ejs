@@ -1,0 +1,18 @@
+<table border="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% data.forEach(person => { %>
+            <tr>
+                <td><%= person.id %></td>
+                <td><%= person.name %></td>
+                <td><%= person.email %></td>
+            </tr>
+        <% }) %>
+    </tbody>
+</table>
